@@ -1,0 +1,12 @@
+<h1 *ngIf="isChecked"> {{ title | uppercase }} String</h1>
+
+<!-- <app-to-do-list-item ></app-to-do-list-item> -->
+
+<div *ngFor="let item of items" class="item" [ngClass]="{'checked' : isItemChecked(item), 'unchecked': !isItemChecked(item)}">
+  <app-to-do-list-item [item]="item" (checkEvent)="deleteItem($event)" class="random"></app-to-do-list-item>
+</div>
+
+
+<div>
+  20 + 4
+</div>

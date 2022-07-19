@@ -1,0 +1,16 @@
+.item {
+  margin-bottom: 30px;
+  cursor: pointer;
+
+  .random {
+    border-style: solid;
+  }
+
+  &.checked {
+    background-color: greenyellow;
+  }
+
+  &.unchecked {
+    background-color: bisque;
+  }
+}
